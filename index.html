@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML</title>
+    <link rel="icon" href="/icon.jpg" sizes="200" />
+</head>
+
+<body>
+    <header>
+        <section id="about me">
+            <h1>About me</h1>
+            <hr />
+            <h2>I am ready to learn HTML</h2>
+            <p>This is my first web page.</p>
+            <h2>My daily schedule</h2>
+            <p>let me tell you how :</p>
+            <ol>
+                <li>i wake up at 5pm</li>
+                <li>i pray</li>
+                <li>i go to institude</li>
+            </ol>
+            <hr />
+        </section>
+    </header>
+
+    <main>
+        <section id="vacation">
+            <h2>I am also planning a vacation</h2>
+            <p>i have been working hard and <em>really need a gateway</em>.</p>
+            <p>i live in <abbr title="Kansas">ks</abbr>, so i want to visit beach</p>
+            <h2>places i would like to visit</h2>
+            <p>
+                .Beaches <br>
+                <img src="images/beach.png" width="100" alt="beach photo">
+                <br />
+                .mountain <br>
+            <figure>
+                <img src="images/mountain.png" width="100" alt="mountain phtoto">
+                <figcaption>mountain photo</figcaption>
+            </figure>
+            </p>
+            <h2>Places i would avoid</h2>
+            <dl>
+                <dt>South pole</dt>
+                <dd>this is cold</dd>
+
+                <dt>north pole</dt>
+                <dd>this is also cold</dd>
+
+                <dt>mountain top</dt>
+                <dd>this are cold aswell</dd>
+            </dl>
+            <h2>i have heard good about this places :</h2>
+            <p>
+            <address>
+                anantagirhils, chevalla tamil-nadu <br>
+                octopus-view-point
+            </address>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>unorderd list</h2>
+        <ul>
+            <li>1st one</li>
+            <li>2nd one</li>
+            <li>3rd one</li>
+        </ul>
+
+        <p> I work at <abbr title="national aeronautics and space administration"><a
+                    href="https://www.nasa.gov/">NASA</a></abbr></p>
+
+        <hr>
+        &lt;&lt;&lt; &copy; afnaan &gt;&gt;&gt;
+        <hr>
+
+        <b>know about me : </b><br>
+        <ol>
+            <li>
+                <a href="#about me">myself</a>
+            </li>
+            <li>
+                <a href="#vacation">vacation</a>
+            </li>
+        </ol>
+
+        <p>download</p>
+        <a href="/icon.jpg">download by clicking here</a>
+        <p>visit <a href="https://www.google.com" target="_blank">google</a></p>
+        <p>go to <a href="/about.html" target="_blank">about tab</a></p>
+
+        <img src="/icon.jpg" alt="icon picture" width="100" height="60">
+    </footer>
+
+    <aside>
+        <details>
+            <summary>can you guess how <mark>many hours</mark> i code daily</summary>
+            <p>i start at 5pm and code for 3 hours daily</p>
+        </details>
+    </aside><br>
+    <!--         TABLE TAG -->
+    <table>
+        <caption>student details</caption>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Afnaan</td>
+            <td>20</td>
+            <td>hyderabad</td>
+        </tr>
+        <tr>
+            <td>rahul</td>
+            <td>21</td>
+            <td>delhi</td>
+        </tr>
+    </table>
+    <hr>
+    <article id="contact">
+        <h2>contact me</h2>
+        <p>i would really like to know your details</p>
+        <form>
+            <fieldset>
+                <legend>user Details</legend>
+                <label for="firstName">Firstname</label>
+                <input type="text" name="firstName" id="firstName" placeholder="lodu" autocomplete="on" required>
+                <br><br>
+                <label for="lastName">Lastname</label>
+                <input type="text" name="lastName" id="lastName" placeholder="lalit" autocomplete="on" required>
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="your credential" required>
+                <br><br>
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" placeholder="+919564985724" required>
+                <br><br>
+                <label for="coffee">Favourite coffee</label>
+                <!-- <select name="coffee" id="coffee">
+                <optgroup label="Coffee">
+                    <option value="regular coffee">regular coffee</option>
+                    <option value="iced coffee">iced coffee</option>
+                </optgroup>
+                <optgroup label="Expresso coffees">
+                    <option value="lattee" selected>lattee</option>
+                    <option value="cappuccino">cappuccino</option>
+                    <option value="cornato">cornato</option>
+                    <option value="others">others</option>
+                </optgroup>
+            </select> -->
+                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                    <option value="coffee">
+                    <option value="expresso">
+                    <option value="americano">
+                    <option value="latte">
+                    <option value="others">
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>What is your favourite food?</legend>
+                <input type="radio" name = "food" id = "biryani" value="bi">
+                <label for="biryani">biryani</label>
+                <br><br>
+                <input type="radio" name="food" id="pasta" value = "pasta">
+                <label for="pasta">pasta</label>
+                <br><br>
+                <input type="radio" name="food" id="chicken" value="chicken">
+                <label for="chicken">chicken</label>
+            </fieldset>
+            <fieldset>
+                <legend> DO you have pets?</legend>
+                <input type="checkbox" name = "pets" id = "dog" value = "value">
+                <label for="dog">Dog</label>
+                <br><br>
+                <input type="checkbox" name="pets" id = "cat" value = "cat">
+                <label for="cat">Cat</label>
+                <br><br>
+                <input type="checkbox" name = "pets" id = tiger value="tiger">
+                <label for="tiger">Tiger</label>
+                <br><br>
+                <input type="checkbox" name = "pets" id = "others" value = "others">
+                <label for="others">Others</label>
+            </fieldset>
+            <fieldset>
+                <legend>Feedback</legend>
+                <label for="message">Your message : </label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="leave your message here"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">reset</button>
+        </form>
+    </article>
+</body>
+
+</html>
